@@ -1,0 +1,8 @@
+- name: Update system
+  tasks:
+    - name: Update goodies
+      ansible.builtin.dnf:
+        pkg:
+          - "*"
+        update_only: true
+        state: latest
