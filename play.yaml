@@ -2,6 +2,7 @@
   hosts: all
   tasks:
     - name: Update goodies
+      become: true
       ansible.builtin.dnf:
         pkg:
           - "*"
