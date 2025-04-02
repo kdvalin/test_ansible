@@ -1,8 +1,8 @@
 - name: Update system
   hosts: all
+  become: true
   tasks:
     - name: Update goodies
-      become: true
       ansible.builtin.dnf:
         pkg:
           - "*"
