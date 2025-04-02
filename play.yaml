@@ -3,6 +3,7 @@
   tasks:
     - name: Update goodies
       become: true
+      become_method: sudo
       become_user: root
       ansible.builtin.dnf:
         pkg:
