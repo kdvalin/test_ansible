@@ -1,4 +1,5 @@
 - name: Update system
+  hosts: all
   tasks:
     - name: Update goodies
       ansible.builtin.dnf:
